@@ -98,43 +98,11 @@
             background-color: #00332e;
         }
 
-        /* Promosi Section */
-        .promo {
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .promo h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .promo p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .promo a {
-            color: #ffd54f;
-            font-size: 1.2rem;
-            background-color: #004d40;
-            padding: 12px 25px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .promo a:hover {
-            background-color: #00332e;
-        }
-
         /* Services Section */
         .services {
             text-align: center;
             padding: 50px 20px;
             background-color: rgba(0, 0, 0, 0.5);
-            margin-top: 0; /* Removed margin-top to eliminate space between sections */
         }
 
         .services h2 {
@@ -251,6 +219,7 @@
             header nav ul {
                 flex-direction: column;
                 gap: 10px;
+                text-align: center;
             }
 
             .cta-button {
@@ -314,35 +283,32 @@
     <section class="services" id="layanan">
         <h2>Layanan Kami</h2>
         <div class="service-box">
-            <i class="fas fa-search"></i>
-            <h3>Data Scraping</h3>
-            <p>Kami mengumpulkan data dari berbagai situs web secara otomatis dengan teknik yang efisien dan cepat.</p>
+            <i class="fas fa-cogs"></i>
+            <h3>Data Scraping Otomatis</h3>
+            <p>Mengambil data dari berbagai sumber dengan cepat dan akurat.</p>
         </div>
         <div class="service-box">
             <i class="fas fa-chart-line"></i>
             <h3>Analisis Data</h3>
-            <p>Data yang sudah terkumpul akan dianalisis untuk memberikan wawasan yang dapat membantu keputusan bisnis Anda.</p>
+            <p>Mengubah data mentah menjadi informasi berharga untuk keputusan bisnis.</p>
         </div>
     </section>
 
-    <!-- Kontak Section -->
+    <!-- Contact Section -->
     <section class="contact" id="kontak">
-        <h2>Kontak Kami</h2>
-        <p>Ingin memesan layanan atau konsultasi lebih lanjut? Klik tombol di bawah untuk menghubungi kami via WhatsApp.</p>
-        <a href="javascript:void(0);" onclick="openWhatsApp()">Konsultasi Sekarang</a>
+        <h2>Hubungi Kami</h2>
+        <p>Siap membantu Anda dalam kebutuhan data scraping atau analisis data</p>
+        <a href="mailto:contact@example.com">Email Kami</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Data Scraping & Analisis. All Rights Reserved.</p>
+        <p>&copy; 2024 Data Scraping & Analisis | All rights reserved.</p>
     </footer>
 
     <script>
-        // Function to open WhatsApp chat
         function openWhatsApp() {
-            const phoneNumber = "+62895328038707"; // Ganti dengan nomor WhatsApp Anda
-            const message = "Halo, saya tertarik dengan layanan data scraping yang Anda tawarkan.";
-            window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+            window.open("https://wa.me/6281234567890", "_blank");
         }
     </script>
 </body>
